@@ -87,13 +87,11 @@ int main() {
     }
     lista[MAX - 1].prox = -1;
     dispo = 0;
-
-    // Criando a cabeça da lista
+    
     int head = primeiroNo();
     lista[head].info = -1;
     lista[head].prox = -1;
 
-    // Inserindo elementos
     inserir(head, 60);
     inserir(head, 50);
     inserir(head, 40);
@@ -104,7 +102,7 @@ int main() {
     printf("Lista antes da deleção:\n");
     printarLista(head);
 
-    // 🔥 Teste: Remover valores entre 20 e 40
+
     deletar(20, 40);
 
     printf("Lista depois da deleção:\n");
